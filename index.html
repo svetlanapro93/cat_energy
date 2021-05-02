@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="page__body">
+    <header class="header">
+        <div class="logo">
+            <img class="logo__image" src="images/logo-mobile.svg">
+            <img class="logo__text" src="images/logo-text.svg" width="101px" height="18">
+            <button class="burger__button burger__button--open" type ="button" aria-expanded="false" aria-controls ="menu__list">
+                <svg class="burger__icon" aria-hidden="true" width="20" height="20">
+                    <use class="burger__icon-menu" href="images/logo-sprite.svg#menu"></use>
+                    <use class="burger__icon-close" href="images/logo-sprite.svg#close"></use>
+                </svg>
+            </button>
+            <nav class="menu">
+                <ul class="menu__list menu__list--open" id="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Каталог продукции </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="">Подбор программы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script src="js/menu.js"></script>
+</body>
+</html>

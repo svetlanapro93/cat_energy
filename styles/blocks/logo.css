@@ -1,0 +1,28 @@
+/*Logo*/
+
+.logo {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    background-color: var(--basic-white);
+}
+@media (max-width: 767px) {
+    .logo {
+        grid-template-rows: 68px min-content;
+    }
+}
+/*Logo изображение*/
+@media (max-width: 767px) {
+    .logo__image {
+        width: 33.32px;
+        height: 37.61px;
+        align-self: center;
+    }
+}
+
+/*Текст лого*/
+
+.logo__text {
+    margin: 0 auto;
+    align-self: center;
+}
+

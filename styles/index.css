@@ -1,0 +1,11 @@
+/*Global*/
+
+@import "variables.css";
+@import "box-model.css";
+
+/*Block*/
+@import "blocks/page.css";
+@import "blocks/header.css";
+@import "blocks/logo.css";
+@import "blocks/burger-button.css";
+@import "blocks/menu.css";

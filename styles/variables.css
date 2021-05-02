@@ -1,0 +1,16 @@
+/*Variables*/
+
+:root {
+    --basic-black: #000000;
+    --basic-green: #68B738;
+    --basic-white: #FFFFFF;
+    --basic :#E5E5E5;
+    --basic-grey: #F2F2F2;
+    --basic-gray-light: #EAEAEA;
+
+    --special-grey: #CDCDCD;
+    --special-grey-2: #666666;
+    --special-grey-dark: #444444;
+
+    --border-color: #E6E6E6;
+}

@@ -1,0 +1,9 @@
+/*Page (класс html)*/
+
+.page {
+    font-family: "Oswald", "Arial";
+}
+
+.page__body {
+    margin: 0;
+}

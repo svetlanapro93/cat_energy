@@ -1,0 +1,25 @@
+/*Burger-button*/
+
+@media (max-width: 767px) {
+    .burger__button {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+}
+@media (max-width: 767px) {
+    .burger__icon{
+        stroke: var(--basic-black);
+    }
+    .burger__icon-menu,
+    .burger__button--open .burger__icon-close {
+        display: block;
+    }
+    .burger__icon-close,
+    .burger__button--open .burger__icon-menu {
+        display: none;
+    }
+
+}
