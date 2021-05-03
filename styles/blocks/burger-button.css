@@ -1,5 +1,9 @@
 /*Burger-button*/
 
+.burger__button {
+    display: none;
+}
+
 @media (max-width: 767px) {
     .burger__button {
         display: block;
@@ -8,10 +12,9 @@
         border: none;
         background-color: transparent;
     }
-}
-@media (max-width: 767px) {
     .burger__icon{
         stroke: var(--basic-black);
+        cursor: pointer;
     }
     .burger__icon-menu,
     .burger__button--open .burger__icon-close {
@@ -21,5 +24,7 @@
     .burger__button--open .burger__icon-menu {
         display: none;
     }
-
 }
+
+
+

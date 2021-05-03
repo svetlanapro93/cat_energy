@@ -6,22 +6,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
     <header class="header">
         <div class="logo">
-            <img class="logo__image" src="images/logo-mobile.svg">
-            <img class="logo__text" src="images/logo-text.svg" width="101px" height="18">
+            <picture class="logo__picture">
+                <source srcset="images/logo-mobile.svg" media="(max-width: 767px)">
+                <img class="logo__image" src="images/logo-desktop.svg" alt="">
+            </picture>
+
+            <svg class="logo__text" aria-hidden="true" width="101" height="18">
+                <use href="images/sprite.svg#logo__text"></use>
+            </svg>
+
             <button class="burger__button burger__button--open" type ="button" aria-expanded="false" aria-controls ="menu__list">
                 <svg class="burger__icon" aria-hidden="true" width="20" height="20">
-                    <use class="burger__icon-menu" href="images/logo-sprite.svg#menu"></use>
-                    <use class="burger__icon-close" href="images/logo-sprite.svg#close"></use>
+                    <use class="burger__icon-menu" href="images/sprite.svg#menu"></use>
+                    <use class="burger__icon-close" href="images/sprite.svg#close"></use>
                 </svg>
             </button>
             <nav class="menu">
                 <ul class="menu__list menu__list--open" id="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link" href="">Главная</a>
+                        <a class="menu__link menu__link--active" href="">Главная</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="">Каталог продукции </a>
